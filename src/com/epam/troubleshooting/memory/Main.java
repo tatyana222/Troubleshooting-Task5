@@ -25,6 +25,8 @@ public class Main {
                 // So instead of storing very small substrings we store the large string every time but with a different offset and length.
 
                 // Memory leak occurs because a lot of objects are not garbage collected
+                // If you open Dominator Tree in Eclipse MAT tool you can see inside ArrayList String objects ("qwe" substrings)
+                // containing the references to source char[] arrays
 
                 // original code
 //                lines.add(line.substring(0, 4));
